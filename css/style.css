@@ -1,0 +1,87 @@
+div.rate{
+    top: 0;
+    width: 3em;
+    right: 0;
+    height: 3em;
+    /* text-align: center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .card:hover:after{
+     content: "";
+    /* background-color: aqua; */
+    /* background: rgba(0, 0, 0, 0.7); */
+    background-color: #333;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index:0;
+    opacity: 0.3;
+   
+}
+/* .card > * {
+    z-index:10;
+} */
+/* .card .card-body{
+    display:none;
+} */
+
+ /* .card-body:hover{
+    display: block;
+} */
+
+.aps-title{
+    position: absolute;
+    color:white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+   
+}
+.card:hover .aps-title{
+ display: flex;
+ 
+ 
+}
+
+.aps-btn{
+    position: absolute;
+    /* top: 0; */
+    bottom: 20%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    margin: 0;
+}
+.card:hover .aps-btn{
+    display: flex;
+}
+.aps-btn >button{
+    font-size: 2rem;
+    z-index: 10;
+}
+.btn-modal{
+    position:relative;
+    z-index: 10;
+    
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+    }
+    ::-webkit-scrollbar-track-piece  {
+    background-color: #C2D2E4;
+    }
+    ::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #212529;
+    }
