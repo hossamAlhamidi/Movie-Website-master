@@ -28,7 +28,7 @@ btn.addEventListener("click",()=>{
     input_search.value = "";
 })
 
-function searchByName(movieName){
+export function searchByName(movieName){
     axios.get(config.base_url+`/search/movie?${config.api_key}&query=${movieName}`).then(res=>{
         console.log(res,"search")
         showMovies(res.data)
