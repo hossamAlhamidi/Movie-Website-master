@@ -131,14 +131,17 @@ searchBtn.addEventListener("click",(event)=>{
     // const output = document.querySelector(".output");
     // output.innerHTML=searchInput.value
     searchInput.value = ""
-    searchWrapper.classList.remove("show")
-    
+    searchWrapper.classList.remove("show");
+   
 })
 
-document.addEventListener("click",(event)=>{
+document.body.addEventListener("click",(event)=>{
     console.log(event.target.tagName.toLowerCase(),"tagname")
     if(event.target.tagName.toLowerCase() != "li" && !event.target.classList.contains("item")  ){
-        console.log("yes")
-        searchWrapper.classList.remove("show")
+        console.log("yess")
+        searchWrapper.classList.remove("show");
+        resultsWrapper.innerHTML = "";
+        
+           
     }
 })

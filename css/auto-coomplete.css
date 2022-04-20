@@ -34,13 +34,14 @@ list-style: none;;
     padding: 0 ;
     border-radius: 4px;
 }
+.show .results ul li {
+    display: block;
+}
 .results ul li {
     display: none;
     margin-bottom: 0.5em;
 }
-.show .results ul li {
-    display: block;
-}
+
 
 .results ul li:hover{
     background-color: 	#F8F8F8;
